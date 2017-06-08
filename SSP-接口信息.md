@@ -49,7 +49,10 @@
 |  request   | string |  请求数  |
 | impression | string |  展示数  |
 |   click    | string |  点击数  |
-|    day     | string |  日期   |
+|  dau       | string |  日活    |
+|  filled    | string |  填充数  |
+|   click    | string |  点击数  |
+|    day     | string |  日期   |
 
 
 响应结果示例(示例数据，仅供参考)
@@ -65,6 +68,8 @@
             "request": "88888888",
             "impression": "88",
             "click": "8",
+            "dau": "6",
+            "filled": "100",
             "day": "2017-04-01"
         },...
     ]
@@ -112,6 +117,8 @@
 |   request    | string |  请求数   |
 |  impression  | string |  展示数   |
 |    click     | string |  点击数   |
+|  dau       | string |  日活    |
+|  filled    | string |  填充数  |
 |     day      | string |   日期   |
 
 
@@ -129,6 +136,8 @@
             "request": "88888888",
             "impression": "88",
             "click": "8",
+            "dau": "6",
+            "filled": "100",
             "day": "2017-04-01"
         },...
     ]
