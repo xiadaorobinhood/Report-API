@@ -49,9 +49,8 @@
 |  request   | string |  请求数  |
 | impression | string |  展示数  |
 |   click    | string |  点击数  |
-|  dau       | string |  日活    |
+|    dau     | string |  日活    |
 |  filled    | string |  填充数  |
-|   click    | string |  点击数  |
 |    day     | string |  日期   |
 
 
