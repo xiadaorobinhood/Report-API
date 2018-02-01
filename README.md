@@ -9,3 +9,6 @@ CloudMobi SSP Report API Guide
 
 [Cloudmobi Report API V2使用指南](Cloudmobi_Report_API_V2.md)
 ===
+
+[Cloudmobi Report API V2 User Guide](Cloudmobi_Report_API_V2_en.md)
+===
