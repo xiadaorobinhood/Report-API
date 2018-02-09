@@ -1,10 +1,30 @@
-> We provide the interface of slot&country report on a daily basis  
-> You should apply to our operation manager for a token to access the interface in advance.
+Cloudmobi Report API User Guide
+=== 
 
-* URL: http://www.cloudmobi.net/cloudmobi-reporting/get-data?t={token}&st={start_time}&et={end_time}&dimension={dimension}  
-* E.g：http://www.cloudmobi.net/cloudmobi-reporting/get-data?t=XXXXXXXXXXXXXXXXXXXXXXXXXXX&st=2017-12-20&et=2017-12-21&dimension=country  
+Catalog
+=== 
 
-* Definition of the Parameter:  
+####    [Overview](#overview)  
+
+####    [Placement Report](#the-interface-of-placement-report) 
+
+####    [Country Report](#the-interface-of-country-report)
+
+####    [Note](#note)
+
+
+
+Overview
+===
+
+* You should apply to our operation manager for a token to access the interface in advance.
+
+### Host
+
+URL: http://www.cloudmobi.net/cloudmobi-reporting/get-data?t={token}&st={start_time}&et={end_time}&dimension={dimension}   
+E.g：http://www.cloudmobi.net/cloudmobi-reporting/get-data?t=XXXXXXXXXXXXXXXXXXXXXXXXXXX&st=2017-12-20&et=2017-12-21&dimension=country  
+
+### Definition of the Parameter:  
 
 |  parameter   |   type   |  definition   |
 | :---: | :----: | :---: |
@@ -12,21 +32,29 @@
 |  st   | string | start time  |
 |  et   | string | end time  |
 |dimension|string|slot:interface of slot；country:interface of country。|
-
+* While dimension=slot，We provide the interface of slot  
+* While dimension=country，We provide the interface of country   
 * The response is in the format of JSON array
 
-* Definition of response parameter 
+### Definition of response parameter 
 
 |  parameter   |   type   |        definition        |
 | :---: | :----: | :--------------: |
 | error | string | error message (It’ll return empty string if response is correct.) |
 | data  | array  |     the object of placement information      |
 
-### The interface of slot report
-> While dimension=slot，We provide the interface of slot  
-> The parameter will be different depends on your slot category 
 
-a、noraml slot
+
+
+
+The interface of placement report
+===
+
+
+
+* The parameter will be different depends on your slot category 
+
+a.noraml slot
 
 |  parameter   |   type   |        definition        |
 | :--------: | :----: | :---: |
@@ -61,7 +89,7 @@ E.g. (for reference only)
 }
   ```
 
-b、reward video & video  slot
+b.reward video & video  slot
 
 |  parameter   |   type   |        definition        |
 | :--------: | :----: | :---: |
@@ -76,10 +104,11 @@ b、reward video & video  slot
 |    day     | string |  date  |
 
 
-### The Interface of Country Report  
-> While dimension=slot，We provide the interface of country     
-> The parameter will be different depends on your slot category。  
-> The interface of country report will show all the country on each slot。
+The Interface of Country Report  
+===
+ 
+* The parameter will be different depends on your slot category。  
+* The interface of country report will show all the country on each slot。
 >  
 
 a、normal slot 
@@ -118,7 +147,7 @@ E.g. (for reference only)
     ]
 }
   ```  
-b、reward video & video  slot 
+b.reward video & video  slot 
 
 |  parameter   |   type   |        definition        |
 | :--------: | :----: | :---: |
@@ -133,7 +162,8 @@ b、reward video & video  slot
 |  filled    | string |  the number of ad fill  |
 |    day     | string |  date  |
 
-## Note
+Note
+==
 * The time range should not exceed 7 days and only data in the last 90 days will be available.  
 * All the data provided is based on UTC 0 time zone.  
 * Data on that very day will be accurate at 7 a.m. next day (UTC T+1 7:00 AM), peculiar circumstance exception.  
